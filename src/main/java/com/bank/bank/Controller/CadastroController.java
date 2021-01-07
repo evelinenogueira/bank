@@ -11,7 +11,7 @@ import reactor.core.publisher.Mono;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/cadastro")
+//@RequestMapping("/cadastro")
 @Slf4j
 public class CadastroController {
 
