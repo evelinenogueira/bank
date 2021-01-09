@@ -23,26 +23,26 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="b43871c3-7d7d-43be-8692-ba2966fccbfc">
-        <schema name="cadastro" object-types="column, table, function, constraint, index, view, dataset trigger, sequence" />
-        <schema name="pg_catalog" object-types="table, view" />
-        <schema name="public" object-types="table, view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="b43871c3-7d7d-43be-8692-ba2966fccbfc">
-      <console name="Connection" type="STANDARD" schema="cadastro" session="Main"><![CDATA[INSERT INTO cadastro.cadastro (nome,email,cpf,data_nascimento)
-values ('Alberto','alberto@gmail.com','11111111111','19940501')
+      <console name="Connection" type="STANDARD" schema="cadastro" session="Main"><![CDATA[CREATE SCHEMA cadastro
 
-S]]></console>
+CREATE table cadastro.cadastro (
+
+    
+    id serial primary key
+    ,nome varchar (255) not null
+    ,email varchar (255) unique not null
+    ,cpf varchar (11) unique not null
+    ,data_nascimento date not null
+
+)]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="b43871c3-7d7d-43be-8692-ba2966fccbfc" object-ref="schemas/cadastro/tables/cadastro" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="b43871c3-7d7d-43be-8692-ba2966fccbfc" />

@@ -4,7 +4,6 @@ import com.bank.bank.Domain.Cadastro;
 import com.bank.bank.Repository.CadastroRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -21,4 +20,6 @@ public class CadastroService {
     public Mono<Cadastro> findById(Integer id) {
         return cadastroRepository.findById(id);
     }
+
+    public Mono<Cadastro> save(Cadastro cadastro) {return cadastroRepository.save(cadastro); }
 }

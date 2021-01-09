@@ -5,6 +5,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.r2dbc.repository.Query;
 import org.springframework.data.relational.core.mapping.Table;
 
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.Date;
@@ -21,6 +22,7 @@ public class Cadastro {
     @NotNull
     private String nome;
     @NotNull
+    @Email
     private String email;
     @NotNull
     private String cpf;
