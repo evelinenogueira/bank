@@ -23,7 +23,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="b43871c3-7d7d-43be-8692-ba2966fccbfc">
+        <schema name="cadastro" object-types="dataset trigger, view, constraint, column, function, index, table, sequence" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="b43871c3-7d7d-43be-8692-ba2966fccbfc">
